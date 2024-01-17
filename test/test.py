@@ -1,1 +1,1 @@
-print("world")
+print("world") //法萨的风俗
