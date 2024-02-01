@@ -1,0 +1,13 @@
+QScrollArea {background: transparent; border: none;}
+QScrollArea > QWidget > QWidget {background: transparent;}
+
+/* 设置选中选项卡的背景色和文本颜色 */
+QTabBar::tab:selected {
+    background-color: #009faa;
+    color: #FFFFFF;
+}
+/* 设置鼠标悬停时的样式 */
+QTabBar::tab:hover {
+    background-color: #009faa;
+    color: #000000;
+}

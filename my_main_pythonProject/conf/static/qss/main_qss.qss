@@ -1,0 +1,446 @@
+QScrollArea {background: transparent; border: none;}
+QScrollArea > QWidget > QWidget {background: transparent;}
+
+
+/* QPushButton样式 */
+QPushButton {
+    color: #FFFFFF;
+    background-color: #11A428; /* 绿色背景 */
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+
+}
+
+QPushButton:hover {
+    background-color: #006400; /* 深绿色背景 鼠标悬停状态 */
+}
+
+QPushButton:pressed {
+    background-color: #00FF00; /*亮绿色背景 按下状态 */
+}
+
+
+/* QRadioButton样式 */
+QRadioButton {
+    color: #11A428; /* 绿色文字 */
+}
+QRadioButton::indicator { width: 20px; height: 20px; }
+
+/* QCheckBox样式 */
+QCheckBox {
+    color: #11A428; /* 绿色文字 */
+}
+QCheckBox::indicator { width: 20px; height: 20px; }
+
+
+/* QLabel样式 */
+QLabel {
+    color: #11A428; /* 绿色文字 */
+}
+
+/* QTextEdit样式 */
+QTextEdit {
+    background-color: #FFFFFF; /* 白色背景 */
+    border: 2px solid #11A428; /* 绿色边框 */
+    border-radius: 5px;
+    padding: 5px;
+    color: #11A428; /* 绿色文字 */
+}
+
+QTextEdit:focus {
+    border-color: #006400; /* 深绿色边框 获得焦点状态 */
+}
+
+
+
+
+/* QMessageBox样式 */
+QMessageBox {
+    background-color: #FFFFFF; /* 白色背景 */
+    border: 2px solid #11A428; /* 绿色边框 */
+    border-radius: 5px;
+    padding: 10px; /* 增加内边距 */
+}
+
+QMessageBox QLabel {
+    color: #11A428; /* 绿色文字 */
+    font-weight: bold;
+}
+
+QMessageBox QPushButton {
+    background-color: #11A428; /* 绿色按钮背景 */
+    color: #FFFFFF; /* 白色按钮文字 */
+    border: none;
+    border-radius: 5px;
+    min-width: 80px; /* 设置按钮最小宽度 */
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #006400; /* 深绿色按钮背景 鼠标悬停状态 */
+}
+
+
+
+/* QLineEdit样式 */
+QLineEdit {
+    border: 2px solid #11A428; /* 绿色边框 */
+    border-radius: 5px;
+    color: #11A428; /* 绿色文字 */
+}
+
+QLineEdit:focus {
+    border-color: #006400; /* 深绿色边框 获得焦点状态 */
+}
+
+
+
+
+/* QSpinBox样式 */
+QSpinBox {
+    background-color: #FFFFFF; /* 白色背景 */
+    color: #11A428; /* 绿色文字 */
+}
+
+QDoubleSpinBox {
+    background-color: #FFFFFF; /* 白色背景 */
+    color: #11A428; /* 绿色文字 */
+}
+
+
+/* QTimeEdit样式 */
+QTimeEdit {
+    background-color: #FFFFFF; /* 白色背景 */
+    color: #11A428; /* 绿色文字 */
+}
+
+/* QDateEdit样式 */
+QDateEdit {
+    background-color: #FFFFFF; /* 白色背景 */
+    color: #11A428; /* 绿色文字 */
+}
+
+
+/* QProgressBar样式 */
+QProgressBar {
+    background-color: #FFFFFF; /* 白色背景 */
+    color: #11A428; /* 绿色文字 */
+    selection-background-color: #11A428;
+}
+
+
+/* QComboBox样式 */
+QComboBox {
+    border: 2px solid #11A428; /* 绿色边框 */
+    border-radius: 5px;
+    color: #11A428; /* 绿色文字 */
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: right;
+    border-left-width: 1px;
+    border-left-color: #11A428; /* 绿色边框 左边 */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #11A428; /* 绿色背景 */
+    image: url(drop_down_icon.png); /* 下拉箭头图标 */
+}
+
+
+/* QScrollBar样式 */
+QScrollBar:vertical {
+    background-color: #FFFFFF; /* 白色背景 */
+}
+
+QScrollBar::handle:vertical {
+    background-color: #11A428; /* 绿色滑块 */
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #006400; /* 深绿色滑块 鼠标悬停状态 */
+}
+
+QScrollBar::sub-line:vertical,
+QScrollBar::add-line:vertical {
+    background-color: #FFFFFF; /* 白色背景 */
+    height: 10px; /* 高度 */
+}
+
+QScrollBar::sub-line:vertical:hover,
+QScrollBar::add-line:vertical:hover {
+    background-color: #11A428; /* 绿色线条 鼠标悬停状态 */
+}
+
+QScrollBar::up-arrow:vertical,
+QScrollBar::down-arrow:vertical {
+    background-color: #FFFFFF; /* 白色背景 */
+    image: none;
+}
+
+QScrollBar::up-arrow:vertical:hover,
+QScrollBar::down-arrow:vertical:hover {
+    background-color: #11A428; /* 绿色箭头 鼠标悬停状态 */
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none; /* 去掉滑动条背景 */
+}
+
+/* 水平滚动条样式 */
+QScrollBar:horizontal {
+    background-color: #FFFFFF; /* 白色背景 */
+    height: 10px; /* 高度 */
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #11A428; /* 绿色滑块 */
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #006400; /* 深绿色滑块 鼠标悬停状态 */
+}
+
+QScrollBar::sub-line:horizontal,
+QScrollBar::add-line:horizontal {
+    background-color: #FFFFFF; /* 白色背景 */
+    width: 10px; /* 宽度 */
+}
+
+QScrollBar::sub-line:horizontal:hover,
+QScrollBar::add-line:horizontal:hover {
+    background-color: #11A428; /* 绿色线条 鼠标悬停状态 */
+}
+
+QScrollBar::left-arrow:horizontal,
+QScrollBar::right-arrow:horizontal {
+    background-color: #FFFFFF; /* 白色背景 */
+    image: none;
+}
+
+QScrollBar::left-arrow:horizontal:hover,
+QScrollBar::right-arrow:horizontal:hover {
+    background-color: #11A428; /* 绿色箭头 鼠标悬停状态 */
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: none; /* 去掉滑动条背景 */
+}
+
+
+
+
+
+/* QSlider样式 */
+QSlider::groove:horizontal {
+    background-color: #E0E0E0; /* 水平槽背景颜色 */
+    height: 8px; /* 水平槽高度 */
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background-color: #11A428; /* 水平滑块颜色 */
+    width: 15px; /* 水平滑块宽度 */
+    border-radius: 8px;
+}
+
+QSlider::handle:horizontal:hover {
+    background-color: #006400; /* 深绿色水平滑块 鼠标悬停状态 */
+}
+
+QSlider::sub-page:horizontal {
+    background-color: #11A428; /* 已选取部分的颜色 */
+    border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+    background-color: #E0E0E0; /* 未选取部分的颜色 */
+    border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled,
+QSlider::add-page:horizontal:disabled {
+    background-color: #C0C0C0; /* 禁用状态下的颜色 */
+}
+
+QSlider::handle:horizontal:disabled {
+    background-color: #C0C0C0; /* 禁用状态下的滑块颜色 */
+}
+
+
+/* QListWidget样式 */
+QListWidget {
+    background-color: #FFFFFF; /* 白色背景 */
+    border: 1px solid #11A428; /* 绿色边框 */
+    border-radius: 5px;
+    padding: 5px;
+    color: #11A428; /* 绿色文字 */
+}
+
+
+
+QListWidget::item:selected {
+    background-color: #11A428; /* 选中项的背景颜色 */
+    color: #FFFFFF; /* 选中项的文字颜色 */
+}
+
+QListWidget::item:hover {
+    background-color: #E0E0E0; /* 鼠标悬停项的背景颜色 */
+}
+
+QListWidget::item:selected:hover {
+    background-color: #006400; /* 鼠标悬停在选中项的背景颜色 */
+}
+
+QListWidget::item:selected:!active {
+    background-color: #006400; /* 非活动状态下选中项的背景颜色 */
+    color: #FFFFFF; /* 非活动状态下选中项的文字颜色 */
+}
+
+QListWidget::scroll-bar:vertical {
+    background-color: #F0F0F0; /* 竖直滚动条背景颜色 */
+    width: 15px; /* 竖直滚动条宽度 */
+}
+
+QListWidget::scroll-bar:vertical:hover {
+    background-color: #CCCCCC; /* 鼠标悬停状态下竖直滚动条背景颜色 */
+}
+
+QListWidget::scroll-bar::handle:vertical {
+    background-color: #CCCCCC; /* 竖直滚动条滑块颜色 */
+    border-radius: 7px;
+}
+
+QListWidget::scroll-bar::handle:vertical:hover {
+    background-color: #11A428; /* 鼠标悬停状态下竖直滚动条滑块颜色 */
+}
+
+QListWidget::scroll-bar::sub-line:vertical,
+QListWidget::scroll-bar::add-line:vertical {
+    background-color: #F0F0F0; /* 竖直滚动条上下箭头背景颜色 */
+    height: 10px; /* 竖直滚动条上下箭头高度 */
+}
+
+QListWidget::scroll-bar::sub-line:vertical:hover,
+QListWidget::scroll-bar::add-line:vertical:hover {
+    background-color: #CCCCCC; /* 鼠标悬停状态下竖直滚动条上下箭头背景颜色 */
+}
+
+QListWidget::scroll-bar::sub-line:vertical {
+    subcontrol-position: top;
+}
+
+QListWidget::scroll-bar::add-line:vertical {
+    subcontrol-position: bottom;
+}
+
+QListWidget::scroll-bar::sub-page:vertical,
+QListWidget::scroll-bar::add-page:vertical {
+    background-color: #E0E0E0; /* 竖直滚动条滑动区域背景颜色 */
+}
+
+/* QTableWidget样式 */
+QTableWidget {
+    background-color: #FFFFFF; /* 白色背景 */
+    border: 1px solid #11A428; /* 绿色边框 */
+    border-radius: 5px;
+    padding: 5px;
+    color: #11A428; /* 绿色文字 */
+}
+
+QTableWidget::item:selected {
+    background-color: #11A428; /* 选中项的背景颜色 */
+    color: #FFFFFF; /* 选中项的文字颜色 */
+}
+
+QTableWidget::item:hover {
+    background-color: #E0E0E0; /* 鼠标悬停项的背景颜色 */
+}
+
+QTableWidget::item:selected:hover {
+    background-color: #006400; /* 鼠标悬停在选中项的背景颜色 */
+}
+
+QTableWidget::item:selected:!active {
+    background-color: #006400; /* 非活动状态下选中项的背景颜色 */
+    color: #FFFFFF; /* 非活动状态下选中项的文字颜色 */
+}
+
+QTableWidget::scroll-bar:vertical {
+    background-color: #F0F0F0; /* 竖直滚动条背景颜色 */
+    width: 15px; /* 竖直滚动条宽度 */
+}
+
+QTableWidget::scroll-bar:vertical:hover {
+    background-color: #CCCCCC; /* 鼠标悬停状态下竖直滚动条背景颜色 */
+}
+
+QTableWidget::scroll-bar::handle:vertical {
+    background-color: #CCCCCC; /* 竖直滚动条滑块颜色 */
+    border-radius: 7px;
+}
+
+QTableWidget::scroll-bar::handle:vertical:hover {
+    background-color: #11A428; /* 鼠标悬停状态下竖直滚动条滑块颜色 */
+}
+
+QTableWidget::scroll-bar::sub-line:vertical,
+QTableWidget::scroll-bar::add-line:vertical {
+    background-color: #F0F0F0; /* 竖直滚动条上下箭头背景颜色 */
+    height: 10px; /* 竖直滚动条上下箭头高度 */
+}
+
+QTableWidget::scroll-bar::sub-line:vertical:hover,
+QTableWidget::scroll-bar::add-line:vertical:hover {
+    background-color: #CCCCCC; /* 鼠标悬停状态下竖直滚动条上下箭头背景颜色 */
+}
+
+QTableWidget::scroll-bar::sub-line:vertical {
+    subcontrol-position: top;
+}
+
+QTableWidget::scroll-bar::add-line:vertical {
+    subcontrol-position: bottom;
+}
+
+QTableWidget::scroll-bar::sub-page:vertical,
+QTableWidget::scroll-bar::add-page:vertical {
+    background-color: #E0E0E0; /* 竖直滚动条滑动区域背景颜色 */
+}
+
+/* QLCDNumber样式 */
+QLCDNumber {
+    background-color: #FFFFFF; /* 白色背景 */
+    border: 1px solid #11A428; /* 绿色边框 */
+    border-radius: 5px;
+    padding: 5px;
+    color: #11A428; /* 绿色文字 */
+}
+
+/* 设置选项卡背景色 */
+QTabBar::tab {
+    background-color: #FFFFFF;
+}
+
+/* 设置选中选项卡的背景色和文本颜色 */
+QTabBar::tab:selected {
+    background-color: #11A428;
+    color: #FFFFFF;
+}
+/* 设置鼠标悬停时的样式 */
+QTabBar::tab:hover {
+    background-color: #11A428;
+    color: #000000;
+}
+
+QDateTimeEdit{
+    background-color: #FFFFFF; /* 白色背景 */
+    border: 1px solid #11A428; /* 绿色边框 */
+    border-radius: 5px;
+    padding: 5px;
+    color: #11A428; /* 绿色文字 */
+}
