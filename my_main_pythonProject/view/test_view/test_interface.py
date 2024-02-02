@@ -10,15 +10,57 @@ class Tset_InterFace(TestMixinS, QMainWindow):
         super().__init__()
 
         self.setupUi(self)
+        self.load_icon()
+        # layout = FlowLayout(self.widget, needAni=True)
+        #
+        # # customize animation
+        # layout.setAnimation(250, QEasingCurve.OutQuad)
+        # layout.setContentsMargins(30, 30, 30, 30)
+        # layout.setVerticalSpacing(20)
+        # layout.setHorizontalSpacing(10)
+        #
+        # # layout.addWidget(self.frame)
+        # # layout.addWidget(self.frame_2)
+        # layout.addWidget(self.frame_3)
+        # # layout.addWidget(self.frame_4)
+        # layout.addWidget(self.frame_5)
+        # layout.addWidget(self.frame_6)
+        # layout.addWidget(self.ElevatedCardWidget_3)
+        # layout.addWidget(self.ElevatedCardWidget_2)
+        # layout.addWidget(self.frame_9)
 
         # self.TabBar.setTabsClosable(False)
         self.TabBar.tabAddRequested.connect(self.onTabAddRequested)
-
         self.TabBar.tabBarClicked.connect(self.onTabClicked)
         self.TabBar.tabCloseRequested.connect(self.TabBar.removeTab)
-
         # 捕获鼠标点击事件
         self.frame_2.mousePressEvent = self.frameClicked
+        self.home_pushButton.clicked.connect(lambda: self.PopUpAniStackedWidget.setCurrentIndex(0))
+        self.pushButton_2.clicked.connect(lambda: self.PopUpAniStackedWidget.setCurrentIndex(1))
+
+    def load_icon(self):
+        # 设置按钮图标
+        buttons = [(self.telephonecall_pushButton, 'test2.png'),
+                   (self.music_player_pushButton, 'test2.png'),
+                   (self.music_player_pushButton_2, 'test2.png'),
+                   (self.music_player_pushButton_3, 'test2.png'),
+                   (self.music_player_pushButton_4, 'test.png'),
+                   (self.music_player_pushButton_5, 'test.png'),
+                   (self.music_player_pushButton_6, 'test.png'),
+                   (self.music_player_pushButton_7, 'test.png'),
+
+                   ]
+        common_button_style = """
+            QPushButton {
+                border: none;
+                background-color: transparent;
+            }
+        """
+
+        for button, icon in buttons:
+            button.setStyleSheet(common_button_style)
+            button.setIcon(QIcon(f'C:/PycharmProjects/my_main_pythonProject/conf/static/icon/{icon}'))
+            button.setIconSize(button.size())
 
     def onTabAddRequested(self):
         TabBar_count = self.TabBar.count()

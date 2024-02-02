@@ -3,7 +3,6 @@ import sys
 
 from PyQt5.QtWidgets import QApplication
 
-from lib.common_function import day_logger
 from test_interface import Tset_InterFace
 
 

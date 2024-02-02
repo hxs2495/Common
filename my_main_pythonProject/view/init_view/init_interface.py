@@ -8,7 +8,7 @@ from lib import common_function
 from .init_untitled import Ui_MainWindow as initializeMixinS
 
 
-class Init_InterFace(initializeMixinS, QMainWindow):
+class InitInterFace(initializeMixinS, QMainWindow):
     switch_main_interface = pyqtSignal()
 
     def __init__(self):

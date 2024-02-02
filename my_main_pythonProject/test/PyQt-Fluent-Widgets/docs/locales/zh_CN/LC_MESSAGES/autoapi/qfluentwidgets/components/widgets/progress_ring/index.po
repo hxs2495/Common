@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, zhiyiYo
+# This file is distributed under the same license as the PyQt-Fluent-Widgets
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyQt-Fluent-Widgets \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-08 09:58+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:2
+#: 36daee4a76d8461081d6f6ea7c07f100
+msgid "progress_ring"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:8
+#: c57b186cc7624eb78c6e7dbbb08dbe25
+msgid "Module Contents"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:19:<autosummary>:1
+#: d1821644e0764d7aab51947044fc0c1e
+msgid ""
+":py:obj:`ProgressRing "
+"<qfluentwidgets.components.widgets.progress_ring.ProgressRing>`\\"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:24
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:19:<autosummary>:1
+#: 0507ec5118cb4f7f9266a627127312f5 75a57a4f7c2846e8afc674b2ecc250ab
+msgid "Progress ring"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:19:<autosummary>:1
+#: 532adc829cad42eba77a6dfc6f03fe69
+msgid ""
+":py:obj:`IndeterminateProgressRing "
+"<qfluentwidgets.components.widgets.progress_ring.IndeterminateProgressRing>`\\"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:44
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:19:<autosummary>:1
+#: 17922d8a0e564ce09d5f67e0b08d939c 9166e900f1d9476c903da5614b522a4b
+msgid "Indeterminate progress ring"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:22
+#: ace52ccdcb524779a78f5b39c2ce33ee
+msgid ""
+"Bases: "
+":py:obj:`qfluentwidgets.components.widgets.progress_bar.ProgressBar`"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:42
+#: 1e8329c37e8341b49018063283acff34
+msgid "Bases: :py:obj:`PyQt5.QtWidgets.QProgressBar`"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:64
+#: e0d22a003cea493999172c371c3438a8
+msgid "start spin"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:69
+#: 58c88b4742814b4da3448c36ca6ff3fa
+msgid "stop spin"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:74
+#: 5a4a829d8a0349e8ba563315e16dd828
+msgid "set the custom background color"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:77
+#: 1d04948e70ea4980be0e5ba0daf5f784
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:78
+#: c01905b29c1f4ed6a041606edee51fc2
+msgid "light, dark: str | Qt.GlobalColor | QColor"
+msgstr ""
+
+#: ../../source/autoapi/qfluentwidgets/components/widgets/progress_ring/index.rst:79
+#: 6f4876ee9f604cdcb6ac8572695aa89a
+msgid "background color in light/dark theme mode"
+msgstr ""
+

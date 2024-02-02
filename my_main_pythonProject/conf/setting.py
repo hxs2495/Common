@@ -34,7 +34,7 @@ background_img = "conf/static/material/14.jpg"
 # url
 music_url = 'http://ainm.cc/music/'
 video_url = 'https://libvio.top/type/1.html'
-rudion_url = 'http://www.guangbomi.com/'
+radio_url = 'http://www.guangbomi.com/'
 smart_url = 'https://c2.binjie.fun/#/chat/1697700354508'
 
 # server_url

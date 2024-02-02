@@ -11,7 +11,7 @@ from .bubble_message import BubbleMessage, ChatWidget, MessageType, Notice
 from .chat_untitled import Ui_MainWindow as chatMixinS
 
 
-class Chat_InterFace(chatMixinS, QMainWindow):
+class ChatInterFace(chatMixinS, QMainWindow):
     switch_main_interface = pyqtSignal()
 
     def __init__(self):
@@ -31,29 +31,6 @@ class Chat_InterFace(chatMixinS, QMainWindow):
 
     def init_setup(self):
         """初始化系统函数绑定"""
-        self.NavigationBar.addItem(
-            routeKey="chat",
-            icon=FluentIcon.CHAT,
-            text="聊天",
-            position=NavigationItemPosition.TOP,
-            onClick=lambda: self.PopUpAniStackedWidget.setCurrentIndex(0)
-
-        )
-
-        self.NavigationBar.addItem(
-            routeKey="setting",
-            icon=FluentIcon.SETTING,
-            text="设置",
-            position=NavigationItemPosition.SCROLL,
-            onClick=lambda: self.PopUpAniStackedWidget.setCurrentIndex(1)
-        )
-        self.NavigationBar.addItem(
-            routeKey="return",
-            icon=FluentIcon.RETURN,
-            text="返回",
-            position=NavigationItemPosition.BOTTOM,
-            onClick=lambda: self.switch_main_interface.emit()
-        )
         self.CommandBar.addActions([Action(FluentIcon.PHONE, '音频通话', triggered=self.on_CommandBar_clicked),
                                     Action(FluentIcon.VIDEO, '视频通话', triggered=self.on_CommandBar_clicked),
                                     Action(FluentIcon.ACCEPT, '接听来电', triggered=self.on_CommandBar_clicked),

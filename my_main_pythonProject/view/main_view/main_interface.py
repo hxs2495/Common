@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import QMainWindow
 from .main_untitled import Ui_MainWindow as MainMixinS
 
 
-class Main_Interface(MainMixinS, QMainWindow):
+class MainInterface(MainMixinS, QMainWindow):
     switch_interface = pyqtSignal(str)
 
     def __init__(self):
