@@ -1,0 +1,8 @@
+[Unit]
+Description=My_Qt_Program
+
+[Service]
+ExecStart=/home/hxs/CLionProjects/QtStudy/cmake-build-debug/QtStudy
+
+[Install]
+WantedBy=multi-user.target
