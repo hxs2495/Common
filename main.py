@@ -36,7 +36,7 @@ class MyWindow(Ui_MainWindow, QMainWindow):
         for i in range(page_count):
             state = self.get_song_comments(page=i * 20, song_id=song_id, comments_data=comments_data)
             if not state:
-                break  # Exit loop on failure
+                break  # 失败时退出循环
             self.current_page = i + 1
             self.progressBar.setValue(int(self.current_page / page_count * 100))
             time.sleep(1)
@@ -56,7 +56,7 @@ class MyWindow(Ui_MainWindow, QMainWindow):
         items = result.get('comments', [])
         if not items:
             self.plainTextEdit.appendPlainText('没有评论信息。')
-            return True  # No comments, but still successful
+            return True  # 没有评论，但仍然成功
 
         for item in items:
             user_info = self.extract_comment_info(item)
@@ -111,6 +111,7 @@ class MyWindow(Ui_MainWindow, QMainWindow):
 
     def _get_gender(self, profile):
         gender_map = {0: '未知', 1: '男', 2: '女'}
+        print(profile)
         return gender_map.get(profile.get('gender'), '无')
 
     def _calculate_age(self, profile):
